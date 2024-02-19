@@ -1,4 +1,9 @@
 import "./App.css";
+import Homepage from "./pages/Homepage";
+import About from "./pages/About";
+import AddPlanet from "./pages/AddPlanet";
+import PlanetDetail from "./pages/PlanetDetail";
+/* import Error from "./pages/Error"; */
 
 import { Routes, Route } from "react-router-dom";
 
@@ -8,9 +13,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />
-        <Route path="/planet/add" element={<AddPlanet />} />
-        <Route path="/planet/:id" element={<PlanetDetail />} />
-        <Route path="*" element={<Error />} />
+        <Route path="/planets/add" element={<AddPlanet />} />
+        <Route path="/planets/:id" element={<PlanetDetail />} />
+        {/* <Route path="*" element={<Error />} /> */}
       </Routes>
     </main>
   );

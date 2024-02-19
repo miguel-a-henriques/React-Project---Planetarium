@@ -1,10 +1,10 @@
+import PlanetDetails from "../components/PlanetDetails";
 
 function PlanetDetail () {
     
+    
     return (
-        <div>
-
-        </div>
+        <PlanetDetails />
     )
 }
 

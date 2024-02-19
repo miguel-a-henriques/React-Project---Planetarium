@@ -15,21 +15,25 @@ function PlanetList() {
   }, []);
 
   return (
-    <div>
+    <div className="planet-container">
       {planets &&
         planets.map((planet) => {
           return (
+            
             <section key={planet.id}>
+              <Link to={`/planets/${planet.id}`}>
               <div className="img-container">
                 <img
                   src={planet.imgSrc.img}
                   alt={planet.imgSrc.imgDescription}
                 />
               </div>
-              <div className="info-container">
+              <div className="name-container">
                 <h1>{planet.name}</h1>
               </div>
+              </Link>
             </section>
+            
           );
         })}
     </div>
