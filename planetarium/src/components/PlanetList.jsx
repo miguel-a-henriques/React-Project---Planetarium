@@ -1,11 +1,39 @@
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
 
-function PlanetList () {
+const API_URL = "http://localhost:3000";
 
-    return (
-        <div>
+function PlanetList() {
+  const [planets, setPlanets] = useState([]);
 
-        </div>
-    )
+  useEffect(() => {
+    axios
+      .get(`${API_URL}/planets`)
+      .then((response) => setPlanets(response.data))
+      .catch((error) => console.log(error));
+  }, []);
+
+  return (
+    <div>
+      {planets &&
+        planets.map((planet) => {
+          return (
+            <section key={planet.id}>
+              <div className="img-container">
+                <img
+                  src={planet.imgSrc.img}
+                  alt={planet.imgSrc.imgDescription}
+                />
+              </div>
+              <div className="info-container">
+                <h1>{planet.name}</h1>
+              </div>
+            </section>
+          );
+        })}
+    </div>
+  );
 }
 
-export default PlanetList
+export default PlanetList;
