@@ -30,6 +30,7 @@ function PlanetDetails () {
                     {planet.basicDetails && planet.basicDetails.mass && <p>Mass: {planet.basicDetails.mass}</p>}
                 </section>
                 <section>
+                    <h2>Order from the Sun: {planet.planetOrder}</h2>
                     <h2>{planet.description}</h2>
                     <h3>Fun Facts:</h3>
                     <ul>
@@ -37,7 +38,14 @@ function PlanetDetails () {
                         {planet.funFacts && planet.funFacts.funFactsTwo &&<li>{planet.funFacts.funFactsTwo}</li>}
                     </ul>
                 </section>
-                </div>}
+                <a href={planet.wikiLink} target="_blank">Wikipedia Link</a>
+                </div>
+                }
+                {planet && planet.id > 8 && <div>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                    </div>}
+                
         </div>
     )
 }
