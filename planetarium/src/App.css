@@ -9,13 +9,47 @@
   background-size: contain;
   padding: 0 50px;
   font-family: "Kode Mono";
+  width: 100vw;
 }
 
 /* GENERAL STYLE */
-h1 {
-  font-size: 20px;
+h1,
+.linkOne,
+.linkTwo {
+  color: #fff;
+  /* text-shadow: 0 0 21px #fff, 0 0 42px rgb(232, 238, 236),
+    0 0 82px rgb(238, 244, 242), 0 0 92px rgb(238, 243, 241),
+    0 0 102px rgb(156, 161, 159), 0 0 151px rgb(202, 207, 205); */
+  animation: neon 0.1s ease-in-out infinite alternate;
 }
 
+@keyframes neon {
+  from {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.92),
+      0 0 40px rgba(202, 228, 225, 0.34), 0 0 22px rgba(30, 132, 242, 0.52),
+      0 0 31px rgba(30, 132, 242, 0.92), 0 0 44px rgba(30, 132, 242, 0.78),
+      0 0 64px rgba(30, 132, 242, 0.92);
+  }
+  to {
+    text-shadow: 0 0 6px rgba(202, 228, 225, 0.98),
+      0 0 30px rgba(202, 228, 225, 0.42), 0 0 12px rgba(30, 132, 242, 0.58),
+      0 0 22px rgba(30, 132, 242, 0.84), 0 0 38px rgba(30, 132, 242, 0.88),
+      0 0 60px rgba(30, 132, 242, 1);
+  }
+}
+
+/* NAV */
+nav ul {
+  list-style: none;
+  display: flex;
+  color: #fff;
+  justify-content: end;
+  gap: 30px;
+}
+
+nav li {
+  list-style: none;
+}
 /* PLANETS LIST */
 
 .planet-container {
@@ -32,6 +66,10 @@ h1 {
   padding: 5px;
 }
 
+.cards:hover {
+  transform: scale(1.07);
+}
+
 .img-container img {
   width: 300px;
   height: 350px;
@@ -42,6 +80,8 @@ h1 {
   color: white;
   font-size: 24px;
 }
+
+/* TEST ANIMATION */
 
 /* PLANETS DETAIL */
 
@@ -65,6 +105,21 @@ h1 {
 .details-container-top img {
   width: 600px;
   height: 600px;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatex(-10px);
+  }
+
+  50% {
+    transform: translatex(-35px);
+  }
+
+  100% {
+    transform: translatex(-10px);
+  }
 }
 
 .container-description {

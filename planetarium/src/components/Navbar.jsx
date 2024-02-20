@@ -6,10 +6,14 @@ function Navbar() {
       <nav>
         <ul>
           <li>
-            <Link to="/">PLANETARIUM</Link>
+            <Link to="/" className="linkOne">
+              PLANETARIUM
+            </Link>
           </li>
           <li>
-            <Link to="/About">ABOUT</Link>
+            <Link to="/About" className="linkTwo">
+              ABOUT
+            </Link>
           </li>
         </ul>
       </nav>

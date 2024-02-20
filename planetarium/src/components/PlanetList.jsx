@@ -19,7 +19,7 @@ function PlanetList() {
       {planets &&
         planets.map((planet) => {
           return (
-            <section key={planet.id} className="cards">
+            <section key={planet.id} className="cards ">
               <Link to={`/planets/${planet.id}`}>
                 <div className="img-container">
                   <img
