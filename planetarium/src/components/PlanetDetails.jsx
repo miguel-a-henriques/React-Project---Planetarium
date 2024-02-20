@@ -63,9 +63,26 @@ function PlanetDetails() {
             <a href={planet.wikiLink} target="_blank">
               Wikipedia Link
             </a>
+            <h3>Users Fun Facts:</h3>
+            {planet && planet.usersFunFacts && planet.usersFunFacts.map(element => {
+            return (
+            <div>
+              <ul>
+                <li>{element}</li>
+              </ul>
+            </div>)
+          })}
           </section>
+
         </div>
       )}
+      <Link to={`/planets/addcuriosity/${planet.id}`}>
+        {planet && planet.id <= 8 && (
+          <div>
+            <button>Add your own curiosity!</button>
+          </div>
+        )}
+      </Link>
       <Link to={`/planets/edit/${planet.id}`}>
         {planet && planet.id > 8 && (
           <div>
