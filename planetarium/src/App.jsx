@@ -4,7 +4,7 @@ import About from "./pages/About";
 import AddPlanet from "./pages/AddPlanet";
 import PlanetDetail from "./pages/PlanetDetail";
 import Navbar from "./components/Navbar";
-/* import Error from "./pages/Error"; */
+import Error from "./pages/Error";
 
 import { Routes, Route } from "react-router-dom";
 import EditPlanet from "./pages/EditPlanet";
@@ -20,7 +20,7 @@ function App() {
         <Route path="/planets/add" element={<AddPlanet />} />
         <Route path="/planets/:id" element={<PlanetDetail />} />
         <Route path="/planets/edit/:id" element={<EditPlanet />} />
-        {/* <Route path="*" element={<Error />} /> */}
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </main>
