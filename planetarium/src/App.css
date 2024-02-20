@@ -10,6 +10,7 @@
   padding: 0 50px;
   font-family: "Kode Mono";
   width: 100vw;
+  color: white;
 }
 
 /* GENERAL STYLE */
@@ -169,6 +170,8 @@ nav li {
 /******************************************************************************/
 /****************Button About Page*********************************************/
 /******************************************************************************/
+
+/******************GitHub*****************************************************/
 .button-icon {
   display: flex;
   border: 3px #fff solid;
@@ -225,4 +228,112 @@ nav li {
   background: #222229;
   color: #fff;
   transform: translate3d(0, 0, 1em);
+}
+
+/**************************LinkedIn*********************************************/
+
+.button-icon-link {
+  display: flex;
+  border: 3px #fff solid;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.icon-link {
+  background-color: #fff;
+  padding: 10px 10px 5px 10px;
+}
+
+.icon-link svg {
+  width: 25px;
+  height: 25px;
+}
+
+.cube-link {
+  transition: all 0.4s;
+  transform-style: preserve-3d;
+  width: 200px;
+  height: 20px;
+}
+
+.button-icon-link:hover {
+  border-color: #0077b5;
+}
+
+.button-icon-link:hover .cube-link {
+  transform: rotateX(90deg);
+}
+
+.side {
+  position: absolute;
+  height: 47px;
+  width: 200px;
+  display: flex;
+  font-size: 1em;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.top-link {
+  background: #0077b5;
+  color: #fff;
+  transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+}
+
+.front-link {
+  background: #222229;
+  color: #fff;
+  transform: translate3d(0, 0, 1em);
+}
+
+
+/************************Quote-slider******************************************/
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 50s linear infinite;
+  -webkit-animation: my-animation 50s linear infinite;
+  animation: my-animation 50s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+#scroll-text {
+  color: white;
+}
+
+#scroll-container {
+  margin: 20px 0;
+  width: 100%;
 }
