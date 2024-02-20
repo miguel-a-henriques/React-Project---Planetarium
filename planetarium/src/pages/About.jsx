@@ -7,7 +7,7 @@ function About () {
             <br />
             <h3>Brought to you by two out of this world developers</h3>
             <p>Miguel Henriques</p>
-            <a href="https://github.com/miguel-a-henriques">
+            <a href="https://github.com/miguel-a-henriques" target="_blank">
             <div className="button-icon">
                         <div className="icon">
                             <svg viewBox="0 0 24 24">
@@ -23,7 +23,7 @@ function About () {
                         </div>
                     </div>
                     </a>
-                    <a href="https://www.linkedin.com/in/miguel-henriques-525514177/">
+                    <a href="https://www.linkedin.com/in/miguel-henriques-525514177/" target="_blank">
                     <div className="button-icon-link">
                         <div className="icon-link">
                             <svg viewBox="0 0 16 16" height={16} width={16} xmlns="http://www.w3.org/2000/svg">
@@ -40,7 +40,7 @@ function About () {
                     </div>
                     </a>
             <p>Tomás Bastos</p>
-            <a href="https://github.com/Tom4sB4stos">
+            <a href="https://github.com/Tom4sB4stos" target="_blank">
             <div className="button-icon">
                         <div className="icon">
                             <svg viewBox="0 0 24 24">
@@ -56,7 +56,7 @@ function About () {
                         </div>
                     </div>
                     </a>
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/tom%C3%A1s-bastos-3aa674136/" target="_blank">
                     <div className="button-icon-link">
                         <div className="icon-link">
                             <svg viewBox="0 0 16 16" height={16} width={16} xmlns="http://www.w3.org/2000/svg">

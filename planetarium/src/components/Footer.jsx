@@ -1,6 +1,7 @@
 function Footer() {
   return (
     <footer>
+      <a href="https://github.com/miguel-a-henriques/React-Project---Planetarium" target="_blank">
       <div className="button-icon">
         <div className="icon">
           <svg viewBox="0 0 24 24">
@@ -15,6 +16,7 @@ function Footer() {
           <span className="side top">check it on github</span>
         </div>
       </div>
+      </a>
     </footer>
   );
 }
