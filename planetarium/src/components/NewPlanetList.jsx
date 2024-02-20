@@ -15,12 +15,12 @@ function NewPlanetList() {
   }, []);
 
   return (
-    <div>
+    <div className="secondList">
       {planets &&
         planets.map((planet) => {
           return (
             planet.id > 8 && (
-              <div className="secondList">
+              <div>
                 <section key={planet.id} className="cards">
                   <Link to={`/planets/${planet.id}`}>
                     <div className="img-container">
@@ -34,18 +34,18 @@ function NewPlanetList() {
                     </div>
                   </Link>
                 </section>
-                <Link to={"/planets/add"}>
-                  <div className="cards empty">
-                    <img
-                      src="https://i.ibb.co/LgNwBBq/icons8-add-100.png"
-                      alt="add your own planet"
-                    />
-                  </div>
-                </Link>
               </div>
             )
           );
         })}
+        <Link to={"/planets/add"}>
+          <div className="cards empty">
+            <img
+              src="https://i.ibb.co/LgNwBBq/icons8-add-100.png"
+              alt="add your own planet"
+            />
+          </div>
+        </Link>
     </div>
   );
 }
