@@ -51,6 +51,7 @@ nav ul {
 nav li {
   list-style: none;
 }
+
 /* PLANETS LIST */
 
 .planet-container {
@@ -82,12 +83,29 @@ nav li {
   font-size: 24px;
 }
 
+.addNew {
+  margin: 50px auto;
+}
+
+.secondList {
+  gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 .empty {
-  width: 300px;
-  height: 350px;
-  border: 2px dashed rgba(255, 255, 255, 0.718);
+  border: 1px dashed rgba(255, 255, 255, 0.718);
   border-radius: 10px;
   padding: 5px;
+  width: 300px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty img {
+  height: 60px;
 }
 
 /* TEST ANIMATION */
@@ -143,6 +161,10 @@ nav li {
   background-color: rgba(0, 0, 0, 0.437);
 }
 
+.container-description li {
+  list-style: none;
+}
+
 /* FORM */
 
 .form-container {
@@ -175,6 +197,47 @@ nav li {
   margin-top: 20px;
 }
 
+/* ABOUT */
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signature {
+  font-size: 20px;
+  margin: 40px auto;
+}
+
+/* ERROR */
+
+.errorContainer {
+  width: 100%;
+}
+
+.errorCenter {
+  text-align: center;
+}
+
+.error img {
+  height: 300px;
+  animation: float2 6s ease-in-out infinite;
+}
+
+@keyframes float2 {
+  0% {
+    transform: translatey(-35px);
+  }
+
+  50% {
+    transform: translatey(35px);
+  }
+
+  100% {
+    transform: translatey(-35px);
+  }
+}
+
 /******************************************************************************/
 /****************Button About Page*********************************************/
 /******************************************************************************/
@@ -182,7 +245,8 @@ nav li {
 /******************GitHub*****************************************************/
 .button-icon {
   display: flex;
-  border: 3px #fff solid;
+  border: 1px #fff solid;
+
   width: fit-content;
   height: fit-content;
   cursor: pointer;
@@ -242,10 +306,12 @@ nav li {
 
 .button-icon-link {
   display: flex;
-  border: 3px #fff solid;
+  border: 1px #fff solid;
+
   width: fit-content;
   height: fit-content;
   cursor: pointer;
+  margin: 20px auto;
 }
 
 .icon-link {
@@ -302,6 +368,7 @@ nav li {
 
 #slider-container {
   overflow: hidden;
+  margin: 50px auto;
 }
 
 #scroll-text {
@@ -348,4 +415,3 @@ nav li {
     transform: translateX(-100%);
   }
 }
-

@@ -30,6 +30,10 @@ body {
   min-height: 100vh;
 }
 
+main {
+  width: 100%;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -70,5 +74,5 @@ button:focus-visible {
 footer {
   display: flex;
   justify-content: center;
-  margin: 40px auto;
+  margin: 60px auto 100px auto;
 }
