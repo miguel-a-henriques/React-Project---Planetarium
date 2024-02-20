@@ -18,7 +18,7 @@ function PlanetList() {
     <div className="planet-container">
       {planets &&
         planets.map((planet) => {
-          return planet.id <= 8 ? (
+          return planet.id <= 8 && (
             <section key={planet.id} className="cards ">
               <Link to={`/planets/${planet.id}`}>
                 <div className="img-container">
@@ -32,31 +32,7 @@ function PlanetList() {
                 </div>
               </Link>
             </section>
-          ) : (
-            <section>
-              <section key={planet.id} className="cards">
-                <Link to={`/planets/${planet.id}`}>
-                  <div className="img-container">
-                    <img
-                      src={planet.imgSrc.img}
-                      alt={planet.imgSrc.imgDescription}
-                    />
-                  </div>
-                  <div className="name-container">
-                    <h1>{planet.name}</h1>
-                  </div>
-                </Link>
-              </section>
-              <Link to={"/planets/add"}>
-                <div className="empty">
-                  <img
-                    src="https://i.ibb.co/LgNwBBq/icons8-add-100.png"
-                    alt="add your own planet"
-                  />
-                </div>
-              </Link>
-            </section>
-          );
+          )
         })}
     </div>
   );
