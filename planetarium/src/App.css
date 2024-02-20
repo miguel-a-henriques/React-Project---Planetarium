@@ -82,6 +82,14 @@ nav li {
   font-size: 24px;
 }
 
+.empty {
+  width: 300px;
+  height: 350px;
+  border: 2px dashed rgba(255, 255, 255, 0.718);
+  border-radius: 10px;
+  padding: 5px;
+}
+
 /* TEST ANIMATION */
 
 /* PLANETS DETAIL */
@@ -290,7 +298,6 @@ nav li {
   transform: translate3d(0, 0, 1em);
 }
 
-
 /************************Quote-slider******************************************/
 
 #slider-container {
@@ -302,7 +309,7 @@ nav li {
   -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
-  
+
   -moz-animation: my-animation 50s linear infinite;
   -webkit-animation: my-animation 50s linear infinite;
   animation: my-animation 50s linear infinite;
@@ -311,14 +318,22 @@ nav li {
 
 /* for Firefox */
 @-moz-keyframes my-animation {
-  from { -moz-transform: translateX(100%); }
-  to { -moz-transform: translateX(-100%); }
+  from {
+    -moz-transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+  }
 }
 
 /* for Chrome */
 @-webkit-keyframes my-animation {
-  from { -webkit-transform: translateX(100%); }
-  to { -webkit-transform: translateX(-100%); }
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+  }
 }
 
 @keyframes my-animation {
@@ -336,12 +351,7 @@ nav li {
 
 /***********************Rocket Slider***************************************/
 
-.divider {
-  display: flex;
-  width: 100%;
-}
-
-.rocketSlider img{
+.rocketSlider img {
   height: 250px;
   width: 250px;
 
@@ -349,7 +359,7 @@ nav li {
   -moz-transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
-  
+
   -moz-animation: my-animation 50s linear infinite;
   -webkit-animation: my-animation 50s linear infinite;
   animation: my-animation 50s linear infinite;
@@ -357,14 +367,22 @@ nav li {
 
 /* for Firefox */
 @-moz-keyframes my-animation {
-  from { -moz-transform: translateX(-100%); }
-  to { -moz-transform: translateX(100%); }
+  from {
+    -moz-transform: translateX(-100%);
+  }
+  to {
+    -moz-transform: translateX(100%);
+  }
 }
 
 /* for Chrome */
 @-webkit-keyframes my-animation {
-  from { -webkit-transform: translateX(-100%); }
-  to { -webkit-transform: translateX(100%); }
+  from {
+    -webkit-transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(100%);
+  }
 }
 
 @keyframes my-animation {
