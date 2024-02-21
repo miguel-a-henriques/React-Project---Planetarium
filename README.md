@@ -24,9 +24,9 @@ To run this project, you need to have Node.js and npm installed on your machine.
 
 - Clone this repository or download the zip file
 - Navigate to the project folder and run `npm install` to install the dependencies
-- Run `npm run server` to start the mock JSON server on port 3001
-- Run `npm start` to start the React app on port 3000
-- Open your browser and go to http://localhost:3000 to see the app
+- Run `npm run dev` to start the mock JSON server on port 3000
+- Run `npm run dev` to start the application
+- Open your browser and go to the url given by the app to see it
 
 ## Usage
 
