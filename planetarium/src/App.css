@@ -400,6 +400,9 @@ nav li {
 #slider-container {
   overflow: hidden;
   margin: 10px auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #scroll-text {
