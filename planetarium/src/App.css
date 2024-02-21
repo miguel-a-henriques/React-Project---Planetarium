@@ -7,7 +7,7 @@
   /* background-color: black; */
   background-image: url(./images/pexels-jonathan-borba-16002196.jpg);
   background-size: contain;
-  padding: 0 50px;
+/*   padding: 0 50px; */
   font-family: "Kode Mono";
   width: 100%;
   /*height: 100%; */
@@ -15,11 +15,16 @@
 }
 
 video {
-/*   padding: 200px 0;
-  transform: translateY(-10%);
-   */
-   height: 100%;
-   width: 100%;
+left: 0;
+top: 0;
+position: fixed;
+object-fit: cover;
+width: 100vw;
+height: 100vh;   
+}
+
+#site-container {
+  padding: 0 50px;
 }
  
 
@@ -92,7 +97,7 @@ nav li {
 }
 
 .img-container img {
-  width: 300px;
+  width: 90%;
   height: 350px;
   object-fit: cover;
 }
@@ -130,6 +135,10 @@ nav li {
 /* TEST ANIMATION */
 
 /* PLANETS DETAIL */
+
+.details-container {
+  margin-top: -20px;
+}
 
 .details-container-top {
   display: grid;
@@ -233,6 +242,7 @@ nav li {
 
 .errorContainer {
   width: 100%;
+  height: 100%;
 }
 
 .errorCenter {
@@ -240,7 +250,8 @@ nav li {
 }
 
 .error img {
-  height: 300px;
+  height: 30%;
+  width: 30%;
   animation: float2 6s ease-in-out infinite;
 }
 
@@ -388,7 +399,7 @@ nav li {
 
 #slider-container {
   overflow: hidden;
-  margin: 30px auto;
+  margin: 10px auto;
 }
 
 #scroll-text {
@@ -397,9 +408,9 @@ nav li {
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
 
-  -moz-animation: my-animation 50s linear infinite;
-  -webkit-animation: my-animation 50s linear infinite;
-  animation: my-animation 50s linear infinite;
+  -moz-animation: my-animation 20s linear infinite;
+  -webkit-animation: my-animation 20s linear infinite;
+  animation: my-animation 20s linear infinite;
   color: white;
 }
 
