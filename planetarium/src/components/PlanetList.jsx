@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const API_URL = "https://mock-backend-server-planetarium.onrender.com/";
+const API_URL = "https://mock-backend-server-planetarium.onrender.com";
 
 function PlanetList() {
   const [planets, setPlanets] = useState([]);

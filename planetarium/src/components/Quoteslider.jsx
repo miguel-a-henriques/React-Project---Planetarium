@@ -2,7 +2,7 @@ import axios from "axios"
 import { useEffect,useState } from "react"
 
 
-const API_URL = "https://mock-backend-server-planetarium.onrender.com/";
+const API_URL = "https://mock-backend-server-planetarium.onrender.com";
 
 function QuoteSlider () {
     
