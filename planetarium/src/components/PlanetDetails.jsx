@@ -30,7 +30,7 @@ function PlanetDetails() {
       {planet && (
         <div>
           <article className="planetsNav">
-            {id > 1 && <Link reloadDocument to={`/planets/${id-1}`}><h1>⇦</h1> </Link>}
+            {id > 1 && <Link reloadDocument to={`/planets/${planet.id-1}`}><h1>⇦</h1> </Link>}
             <h1>{planet.name}</h1>
             {planets &&  id < planets.length && <Link reloadDocument to={`/planets/${planet.id+1}`}><h1>⇨</h1> </Link>}
           </article>
