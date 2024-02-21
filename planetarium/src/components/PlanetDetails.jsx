@@ -6,8 +6,10 @@ const API_URL = "http://localhost:3000";
 
 function PlanetDetails() {
   const [planet, setPlanet] = useState({});
+  const [planets, setPlanets] = useState();
 
   const { id } = useParams();
+  
 
   useEffect(() => {
     axios
@@ -16,11 +18,22 @@ function PlanetDetails() {
       .catch((error) => console.log(error));
   }, []);
 
+  useEffect(()=> {
+    axios
+    .get(`${API_URL}/planets`)
+    .then((response) => setPlanets(response.data))
+    .catch((error) => console.log(error))
+  },[])
+
   return (
     <div className="details-container">
       {planet && (
         <div>
-          <h1>{planet.name}</h1>
+          <article>
+            {id > 1 && <Link reloadDocument to={`/planets/${id-1}`}><h1>⇦</h1> </Link>}
+            <h1>{planet.name}</h1>
+            {planets &&  id < planets.length && <Link reloadDocument to={`/planets/${planet.id+1}`}><h1>⇨</h1> </Link>}
+          </article>
           <section className="details-container-top">
             <div className="details-container-img">
               {planet.imgSrc && planet.imgSrc.img && (
