@@ -19,7 +19,7 @@ function App() {
   useEffect(()=> {
     const timeOut = setTimeout(()=> {
       setVideo(false);
-    }, 8000);
+    }, 5000);
     return () => clearTimeout (timeOut)
   },[])
   return (
