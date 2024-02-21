@@ -43,6 +43,3 @@ To run this project, you need to have Node.js and npm installed on your machine.
 
 This project was developed by Miguel Henriques and Tomas Bastos as a personal project to practice React and web development skills.
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details
