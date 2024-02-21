@@ -5,12 +5,12 @@ import AddPlanet from "./pages/AddPlanet";
 import PlanetDetail from "./pages/PlanetDetail";
 import Navbar from "./components/Navbar";
 import Error from "./pages/Error";
-
 import { Routes, Route } from "react-router-dom";
 import EditPlanet from "./pages/EditPlanet";
 import Footer from "./components/Footer";
 import AddCuriosity from "./components/AddCuriosity";
 import { useEffect, useState } from "react";
+import intro from "./images/intro.mp4";
 
 function App() {
 
@@ -23,23 +23,26 @@ function App() {
     return () => clearTimeout (timeOut)
   },[])
   return (
-    <main>
-{/*       {video && (
-        <video autoPlay muted loop>
-          <source src="" type="video" />
+    <main id="main">
+      {video && (
+        <video autoPlay muted style={{margin: "50px auto"}}>
+          <source src={intro} type="video/mp4" autoFocus/>
         </video>
-      )} */}
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/planets/add" element={<AddPlanet />} />
-        <Route path="/planets/:id" element={<PlanetDetail />} />
-        <Route path="/planets/edit/:id" element={<EditPlanet />} />
-        <Route path="/planets/addcuriosity/:id" element={<AddCuriosity />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
-      <Footer />
+      )}
+      {!video && (<div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/planets/add" element={<AddPlanet />} />
+          <Route path="/planets/:id" element={<PlanetDetail />} />
+          <Route path="/planets/edit/:id" element={<EditPlanet />} />
+          <Route path="/planets/addcuriosity/:id" element={<AddCuriosity />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+        <Footer />
+      </div>)
+      }
     </main>
   );
 }

@@ -9,9 +9,17 @@
   background-size: contain;
   padding: 0 50px;
   font-family: "Kode Mono";
-  width: 100vw;
+  width: 100%;
+  /*height: 100%; */
   color: white;
 }
+
+video {
+  padding: 200px 0;
+  transform: translateY(-10%);
+  
+}
+ 
 
 /* GENERAL STYLE */
 h1,
