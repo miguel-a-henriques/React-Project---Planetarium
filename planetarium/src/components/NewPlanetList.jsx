@@ -20,8 +20,8 @@ function NewPlanetList() {
         planets.map((planet) => {
           return (
             planet.id > 8 && (
-              <div>
-                <section key={planet.id} className="cards">
+              <div key={planet.id}>
+                <section className="cards">
                   <Link to={`/planets/${planet.id}`}>
                     <div className="img-container">
                       <img
