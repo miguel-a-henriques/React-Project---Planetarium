@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import AddCuriosity from "./components/AddCuriosity";
 import { useEffect, useState } from "react";
 import intro from "./images/intro.mp4";
+import intro2 from "./images/intro2.mp4";
 
 function App() {
   const [video, setVideo] = useState(true);
@@ -24,8 +25,8 @@ function App() {
   return (
     <main id="main">
       {video && (
-        <video autoPlay muted style={{ margin: "50px auto" }}>
-          <source src={intro} type="video/mp4" autoFocus />
+        <video autoPlay muted>
+          <source src={intro2} type="video/mp4" autoFocus />
         </video>
       )}
       {!video && (

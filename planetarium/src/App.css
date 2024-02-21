@@ -15,9 +15,11 @@
 }
 
 video {
-  padding: 200px 0;
+/*   padding: 200px 0;
   transform: translateY(-10%);
-  
+   */
+   height: 100%;
+   width: 100%;
 }
  
 
