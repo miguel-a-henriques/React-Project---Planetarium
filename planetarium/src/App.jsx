@@ -10,10 +10,25 @@ import { Routes, Route } from "react-router-dom";
 import EditPlanet from "./pages/EditPlanet";
 import Footer from "./components/Footer";
 import AddCuriosity from "./components/AddCuriosity";
+import { useEffect, useState } from "react";
 
 function App() {
+
+  const [video, setVideo] = useState(true);
+
+  useEffect(()=> {
+    const timeOut = setTimeout(()=> {
+      setVideo(false);
+    }, 8000);
+    return () => clearTimeout (timeOut)
+  },[])
   return (
     <main>
+{/*       {video && (
+        <video autoPlay muted loop>
+          <source src="" type="video" />
+        </video>
+      )} */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />

@@ -60,8 +60,8 @@ function EditPlanet () {
         .catch((error) => console.log(error))
     }
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
+        <div className="form-container">
+            <form onSubmit={handleSubmit} className="forms">
                 <label>Name</label>
                 <input type="text" name="name" value={name} required onChange={(e) => SetName(e.target.value)} />
                 <label>Description</label>
@@ -87,8 +87,8 @@ function EditPlanet () {
                 <label>Volume</label>
                 <input type="text" name="volume" value={volume} placeholder="optional" onChange={(e)=> setVolume(e.target.value)}/>
                 <button type="submit">Send to Space</button>
+                <button onClick={deletePlanet}>Send to BlackHole</button>
             </form>
-            <button onClick={deletePlanet}>Send to BlackHole</button>
         </div>
         
     )

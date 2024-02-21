@@ -38,6 +38,9 @@ h1,
       0 0 60px rgba(30, 132, 242, 1);
   }
 }
+button {
+  margin: 20px;
+}
 
 /* NAV */
 nav ul {
@@ -53,6 +56,12 @@ nav li {
 }
 
 /* PLANETS LIST */
+
+.planetsNav {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
 
 .planet-container {
   /* display: flex; */
@@ -172,7 +181,7 @@ nav li {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw;
+ 
 }
 
 .forms {
@@ -191,10 +200,11 @@ nav li {
   background-color: #ffffff2f;
   border-radius: 10px;
   color: #fff;
+  margin: 7px;
 }
 
 .forms button {
-  margin-top: 20px;
+  margin: 20px;
 }
 
 /* ABOUT */
@@ -368,7 +378,7 @@ nav li {
 
 #slider-container {
   overflow: hidden;
-  margin: 50px auto;
+  margin: 30px auto;
 }
 
 #scroll-text {
