@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const API_URL = "http://localhost:3000";
+const API_URL = "https://mock-backend-server-planetarium.onrender.com/";
 
 function AddPlanet() {
   const [name, SetName] = useState("");

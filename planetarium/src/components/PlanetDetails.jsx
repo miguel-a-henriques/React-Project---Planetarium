@@ -2,7 +2,7 @@ import axios from "axios";
 import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-const API_URL = "http://localhost:3000";
+const API_URL = "https://mock-backend-server-planetarium.onrender.com/";
 
 function PlanetDetails() {
   const [planet, setPlanet] = useState({});
