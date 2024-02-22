@@ -65,7 +65,7 @@ function EditPlanet () {
                 <label>Name</label>
                 <input type="text" name="name" value={name} required onChange={(e) => SetName(e.target.value)} />
                 <label>Description</label>
-                <input type="text" name="description" value={description} required onChange={(e) => SetDescription(e.target.value)} />
+                <input className="descriptionBox" type="text" name="description" value={description} required onChange={(e) => SetDescription(e.target.value)} />
                 <label>WikiLink</label>
                 <input type="text" name="wikiLink" value={wikiLink} placeholder="Wikipedia Link" required onChange={(e) => setWikiLink(e.target.value)} />
                 <label>Image</label>

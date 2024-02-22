@@ -56,6 +56,7 @@ function AddPlanet() {
 
         <label>Description</label>
         <input
+          className="descriptionBox"
           type="text"
           name="description"
           value={description}

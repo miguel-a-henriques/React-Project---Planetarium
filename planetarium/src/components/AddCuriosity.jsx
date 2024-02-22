@@ -40,12 +40,14 @@ function AddCuriosity () {
     }
 
     return (
+        <div className="notFun">
         <div className="form-container">
             <form className="forms" onSubmit={handleSubmit}>
                 <label>Add your own Fun Fact</label>
-                <input type="text" name="userFunFact" value={userFunFact} required onChange={(e)=> setUserFunFact(e.target.value)} />
+                <input className="funFact" type="text" name="userFunFact" value={userFunFact} required onChange={(e)=> setUserFunFact(e.target.value)} />
                 <button type="submit">Send to Space</button>
             </form>
+        </div>
         </div>
     )
 }

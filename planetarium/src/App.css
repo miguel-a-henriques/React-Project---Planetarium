@@ -199,7 +199,8 @@ nav li {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
+  margin: 20px auto;
  
 }
 
@@ -220,6 +221,10 @@ nav li {
   border-radius: 10px;
   color: #fff;
   margin: 7px;
+}
+
+input.descriptionBox{
+  height: 100px;
 }
 
 .forms button {
@@ -450,3 +455,213 @@ nav li {
     transform: translateX(-100%);
   }
 }
+
+
+/* CSS MEDIA QUERIES */
+
+@media (min-width: 1300px) and (max-width: 1900px) {
+  
+  .img-container img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+  }
+
+}
+
+@media (min-width: 760px) and (max-width: 1300px) {
+
+  .forms {
+    padding: 20px 40px;
+  }
+  input.descriptionBox{
+    height: 100px;
+  }
+
+  .form-container{
+    margin: 50px auto;
+    height: 100vh;
+  }
+
+  .img-container img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+  }
+
+
+  .details-container-top {
+    display: grid;
+  grid-template-columns: 1fr;
+  }
+
+  .planetsNav {
+    
+    gap: 50px;
+    
+  }
+
+.empty{
+  height: 96%;
+}
+
+  .details-container-top img {
+    width: 600px;
+    height: 600px;
+    animation: float3 6s ease-in-out infinite;
+  }
+  
+  @keyframes float3 {
+    0% {
+      transform: translatex(45px);
+    }
+  
+    50% {
+      transform: translatex(-70px);
+    }
+  
+    100% {
+      transform: translatex(45px);
+    }
+  }
+
+ #main {
+   
+    display: flex;
+    flex-direction: column;
+    
+  }
+  form.forms {
+   
+    margin: 50px auto; 
+  }
+  input.funFact{
+    height: 100px;
+  }
+
+ 
+.about h1 {
+  font-size: 40px;
+  
+}
+
+h1.signature{
+  font-size: 25px;
+}
+  
+
+.errorContainer {
+  width: 100%;
+  height: 100vh;
+ 
+  
+}
+
+.error img {
+  height: 60%;
+  width: 70%;
+}
+}
+
+@media (max-width: 426px) {
+  
+  .planet-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .img-container img {
+    object-fit: contain;
+  }
+
+  .secondList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .empty {
+    height: 450px;
+    width: 315px;
+  }
+
+  .details-container-top {
+    display: grid;
+  grid-template-columns: 1fr;
+  }
+
+  .details-container-top img {
+    width: 320px;
+    height: 320px;
+    animation: float3 6s ease-in-out infinite;
+  }
+  
+  @keyframes float3 {
+    0% {
+      transform: translatex(30px);
+    }
+  
+    50% {
+      transform: translatex(-45px);
+    }
+  
+    100% {
+      transform: translatex(30px);
+    }
+  }
+
+  .container-description ul {
+   padding-inline-start: 0;
+   line-height: 30px;
+  }
+
+  .planetsNav {
+    
+    gap: 20px;
+    
+  }
+
+  .form-container{
+    height: 100%;
+    padding: 0 0;
+
+  }
+
+  .forms {
+    width: 50%;
+    justify-content: center;
+    margin: 40px 0;
+    }
+  
+
+  input.funFact{
+    width: 276px;
+    height: 200px;
+    margin-left: -60px;
+  }
+
+  .forms input{
+    width: 276px;
+    height: 70px;
+    margin-left: -60px;
+
+  }
+  .notFun{
+    height: 100vh;
+  }
+
+  .about h1{
+    font-size: 30px;
+  }
+
+  .errorContainer{
+    height: 100vh;
+  }
+
+  .error img {
+    height: 100%;
+    width: 100%;
+  }
+
+}
+
+  
