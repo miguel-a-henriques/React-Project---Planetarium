@@ -563,7 +563,7 @@ h1.signature{
 }
 }
 
-@media (max-width: 426px) {
+@media (min-width: 420px) and (max-width: 759px) {
   
   .planet-container {
     display: flex;
@@ -665,3 +665,153 @@ h1.signature{
 }
 
   
+@media (max-width: 419px) {
+
+
+  .planet-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .img-container img {
+    object-fit: contain;
+  }
+
+  .secondList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .empty {
+    height: 400px;
+    width: 370%
+  }
+
+  .details-container-top {
+    display: grid;
+  grid-template-columns: 1fr;
+  }
+
+  .forms{
+    width: 40%;
+  }
+
+  .forms input{
+    width: 200%;
+    height: 70px;
+    margin-left: -60px;
+
+  }
+
+  .forms button {
+   width: 150%;
+   margin-left: -25%
+  }
+
+  .details-container-text {
+    width: 80%;
+    font-size: 12px;
+    line-height: 30px;
+  }
+
+  .container-description ul {
+    padding-inline-start: 0;
+    line-height: 30px;
+   }
+
+  .details-container-img img {
+    width: 300px;
+    height: 300px;
+    animation: float3 6s ease-in-out infinite;
+  }
+  
+  @keyframes float3 {
+    0% {
+      transform: translatex(5px);
+    }
+  
+    50% {
+      transform: translatex(-30px);
+    }
+  
+    100% {
+      transform: translatex(5px);
+    }
+  }
+
+  .planetsNav {
+    
+    gap: 15px;
+    
+  }
+  .planetsNav h1 {
+    
+    font-size: 50px;
+    
+  }
+
+  .about h1{
+    font-size: 30px;
+
+  }
+
+  #root {
+   
+    background-image: url(./images/pexels-jonathan-borba-16002196.jpg);
+    
+    background-size: auto;
+
+  }
+
+  .error img {
+    height: 100%;
+    width: 100%;
+  }
+
+
+   #scroll-text {
+    
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  
+    -moz-animation: my-animation 30s linear infinite;
+    -webkit-animation: my-animation 30s linear infinite;
+    animation: my-animation 30s linear infinite;
+    color: white;
+  } 
+
+  /* for Firefox */
+@-moz-keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+  }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from {
+    -webkit-transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-900%);
+  }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-900%);
+    -webkit-transform: translateX(-900%);
+    transform: translateX(-900%);
+  }
+}
+
+}
